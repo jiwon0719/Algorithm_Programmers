@@ -1,0 +1,16 @@
+class Solution {
+    public int solution(int hp) {
+        int answer = 0;
+        int genAnt, solAnt, wokAnt = 0;
+        
+        genAnt = hp / 5;
+        solAnt = (hp % 5) / 3;
+        
+        if((hp % 5) % 3 != 0) {
+            wokAnt = (hp % 5) % 3 / 1;
+        } 
+        
+        answer = genAnt + solAnt + wokAnt;        
+        return answer;
+    }
+}
